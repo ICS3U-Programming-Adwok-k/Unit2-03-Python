@@ -16,12 +16,12 @@ def main():
         constants.LABOUR_COST + constants.RENTAL_COST + constants.INGRED_COST * diameter
     )
 
-    tax = constants.HST * diameter
+    tax = constants.HST * subtotal
     total = subtotal + tax
 
     # output
     print("")
-    print("The total cost is = ${:,.2f}.format(total)")
+    print("The total cost is = ${:,.2f}".format(total))
 
 
 if __name__ == "__main__":
